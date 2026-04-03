@@ -2,6 +2,9 @@
 #include "ui.h"
 #include "ui_anim.h"
 
+int petPosX = 100;
+int petPosY = 100;
+
 // Graphics headers
 #include "StoneGolem.h"
 #include "egg_hatch.h"
