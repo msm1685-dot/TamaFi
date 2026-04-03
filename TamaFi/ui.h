@@ -1,3 +1,6 @@
+#ifndef UI_H
+#define UI_H
+
 #pragma once
 #include <Arduino.h>
 #include <TFT_eSPI.h>
@@ -131,4 +134,6 @@ void uiOnScreenChange(Screen newScreen);            // Call whenever currentScre
 void uiDrawScreen(Screen screen,
                   int mainMenuIndex,
                   int controlsIndex,
-                  int settingsMenuIndex);           // Call every loop after logic/buttons
+                  int settingsMenuIndex);  
+#endif
+// Call every loop after logic/buttons
