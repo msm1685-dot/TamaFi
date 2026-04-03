@@ -2,8 +2,8 @@
 #include "ui.h"
 #include "ui_anim.h"
 
-int petPosX = 100;
-int petPosY = 100;
+int petPosX = 120;
+int petPosY = 90;
 
 // Graphics headers
 #include "StoneGolem.h"
