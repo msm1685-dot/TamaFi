@@ -9,8 +9,8 @@
 
 void sndHatch();
 
-int petPosX = 120;
-int petPosY = 90;
+extern int petPosX = 120;
+extern int petPosY = 90;
 
 enum Screen {
   SCREEN_BOOT,
