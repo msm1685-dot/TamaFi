@@ -12,9 +12,9 @@ jobs:
         run: pip install -U platformio
       - name: Run Build
         run: pio run
-      - name: Upload
+      - name: Upload firmware
         uses: actions/upload-artifact@v4
         with:
-          name: firmware
+          name: TamaFi-Firmware
           path: .pio/build/esp32-s3-devkitc-1/firmware.bin
 
