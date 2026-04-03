@@ -1,0 +1,27 @@
+name: Build Firmware
+
+on:
+  push:
+    paths:
+      - 'platformio.ini'
+      - 'TamaFi/**'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Install PlatformIO
+        run: pip install -U platformio
+      - name: Run pio run
+        run: pio run
+      - name: Upload Binary
+        uses: actions/upload-artifact@v4
+        with:
+          name: firmware
+          path: .pio/build/esp32-s3-devkitc-1/firmware.bin
+
