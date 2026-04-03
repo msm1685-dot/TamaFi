@@ -1,12 +1,10 @@
 name: Build Firmware
-
 on:
   push:
     paths:
       - 'platformio.ini'
       - 'TamaFi/**'
   workflow_dispatch:
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,4 +22,3 @@ jobs:
         with:
           name: firmware
           path: .pio/build/esp32-s3-devkitc-1/firmware.bin
-
